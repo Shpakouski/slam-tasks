@@ -61,7 +61,7 @@ if ($_GET['arrayRows'] && $_GET['arrayCols']) {
             if ( ! $min) {
                 $min = $num;
             }
-            if ($num <= $min) {
+            if ($num < $min) {
                 $min       = $num;
                 $className .= "m";
                 $table     .= "<td class = \"$className\"> $num </td>";
@@ -75,7 +75,7 @@ if ($_GET['arrayRows'] && $_GET['arrayCols']) {
     echo $table;
     echo "<style>.$className {
     background-color: #d2f4ea !important;
-}</style>";
+    }</style>";
 
 }
 
