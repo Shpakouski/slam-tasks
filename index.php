@@ -2,7 +2,7 @@
 require_once 'header.php';
 ?>
 
-Task 1
+    Выберите задачу из меню слева.
 
 <?php
 require_once 'footer.php';

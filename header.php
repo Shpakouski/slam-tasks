@@ -12,11 +12,24 @@
             flex-wrap: nowrap;
             height: 100vh;
             overflow-x: auto;
-            overflow-y: hidden;
         }
 
         body > * {
             flex-shrink: 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: .7rem;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, .85);
+            border-radius: 1.6rem;
+            box-shadow: inset .2rem .2rem .2rem hsla(0, 0%, 100%, .25), inset -.2rem -.2rem .2rem rgba(0, 0, 0, .25);
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f3f3f3;
         }
 
         .btn-toggle {
@@ -67,42 +80,60 @@
         .fw-semibold {
             font-weight: 600;
         }
+
     </style>
 
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 
-
-<div class="p-3 bg-white" style="width: 280px;">
-    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-        <span class="fs-5 fw-semibold">Задачи</span>
-    </a>
-    <ul class="list-unstyled ps-0">
-        <li class="mb-1">
-            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                    data-bs-target="#home-collapse" aria-expanded="true">
-                Задача 1
-            </button>
-            <div class="collapse show" id="home-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Описание</a></li>
-                    <li><a href="/" class="link-dark rounded">Решение</a></li>
-                </ul>
+<div class="container">
+    <header class="py-3 mt-3">
+        <div class="row">
+            <div class="col-3">
+                <a href="/"><img src="img/avatar.png" class="rounded-circle mx-auto d-block" alt="photo"></a>
             </div>
-        </li>
-        <li class="mb-1">
-            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                    data-bs-target="#home-collapse" aria-expanded="true">
-                Задача 2
-            </button>
-            <div class="collapse show" id="home-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-dark rounded">Описание</a></li>
-                    <li><a href="task-two.php" class="link-dark rounded">Решение</a></li>
-                </ul>
-            </div>
-        </li>
+            <div class="col-9"></div>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-3">
+                <div class="p-3 bg-white">
+                    <a href="/"
+                       class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                        <span class="fs-5 fw-semibold" style="margin-left: 25px">Задачи</span>
+                    </a>
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#task-one" aria-expanded="true">
+                                Задача 1
+                            </button>
+                            <div class="collapse show" id="task-one">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="task-one-description.php" class="link-dark rounded">Описание</a></li>
+                                    <li><a href="task-one.php" class="link-dark rounded">Решение</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#task-two" aria-expanded="true">
+                                Задача 2
+                            </button>
+                            <div class="collapse show" id="task-two">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="task-two-description.php" class="link-dark rounded">Описание</a></li>
+                                    <li><a href="task-two.php" class="link-dark rounded">Решение</a></li>
+                                </ul>
+                            </div>
+                        </li>
 
-        <li class="border-top my-3"></li>
-    </ul>
-</div>
+                        <li class="border-top my-3"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="p-5 mt-5">
