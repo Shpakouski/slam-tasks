@@ -1,5 +1,17 @@
 <?php
 require_once 'header.php';
+function in_array_r($needle, $haystack, $strict = false)
+{
+    foreach ($haystack as $item) {
+        if (($strict ? $item === $needle : $item == $needle) || (is_array($item) && in_array_r($needle, $item,
+                    $strict))) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 ?>
 
     <div class="row mb-5">
@@ -41,10 +53,11 @@ if ($_GET['arrayRows'] && $_GET['arrayCols']) {
             $num = null;
             while ($num === null) {
                 $randomNumber = rand(1, 1000);
-                if ( ! in_array($randomNumber, $arr)) {
+                if ( ! in_array_r($randomNumber, $arr)) {
                     $num = $randomNumber;
                 }
             }
+            $arr[$i][$j] = $num;
             if ( ! $min) {
                 $min = $num;
             }
