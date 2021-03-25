@@ -182,6 +182,19 @@
                                 </ul>
                             </div>
                         </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#task-seven" aria-expanded="true">
+                                Задача 7
+                            </button>
+                            <div class="collapse show" id="task-seven">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="task-seven-description.php" class="link-dark rounded">Описание</a></li>
+                                    <li><a href="task-seven.php" class="link-dark rounded">Решение</a></li>
+                                </ul>
+                            </div>
+                        </li>
 
                         <li class="border-top my-3"></li>
                     </ul>
