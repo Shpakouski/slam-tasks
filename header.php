@@ -133,13 +133,26 @@
                         <li class="mb-1">
                             <button class="btn btn-toggle align-items-center rounded collapsed"
                                     data-bs-toggle="collapse"
-                                    data-bs-target="#task-one" aria-expanded="true">
+                                    data-bs-target="#task-three" aria-expanded="true">
                                 Задача 3
                             </button>
-                            <div class="collapse show" id="task-one">
+                            <div class="collapse show" id="task-three">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                     <li><a href="task-three-description.php" class="link-dark rounded">Описание</a></li>
                                     <li><a href="task-three.php" class="link-dark rounded">Решение</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#task-four" aria-expanded="true">
+                                Задача 4
+                            </button>
+                            <div class="collapse show" id="task-four">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="task-four-description.php" class="link-dark rounded">Описание</a></li>
+                                    <li><a href="task-four.php" class="link-dark rounded">Решение</a></li>
                                 </ul>
                             </div>
                         </li>
