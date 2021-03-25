@@ -169,6 +169,19 @@
                                 </ul>
                             </div>
                         </li>
+                        <li class="mb-1">
+                            <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#task-six" aria-expanded="true">
+                                Задача 6
+                            </button>
+                            <div class="collapse show" id="task-six">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="task-six-description.php" class="link-dark rounded">Описание</a></li>
+                                    <li><a href="task-six.php" class="link-dark rounded">Решение</a></li>
+                                </ul>
+                            </div>
+                        </li>
 
                         <li class="border-top my-3"></li>
                     </ul>

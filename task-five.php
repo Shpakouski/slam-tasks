@@ -12,7 +12,7 @@ require_once 'header.php';
         <div class="row mb-3">
             <legend class="col-form-label col-sm-2 pt-0">Ваша почта:</legend>
             <div class="col-sm-5">
-                <input class="form-control" type="text" name="userMail" placeholder="mail@mail.by">
+                <input class="form-control" type="email" name="userMail" placeholder="mail@mail.by">
             </div>
         </div>
         <div class="row mb-3">
